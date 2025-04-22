@@ -1,0 +1,29 @@
+
+
+=================== Project Detail ========================
+
+Deploying 3 tier architecture for HR use. Working with multiple AWS Services like, EC2, VPC and components, LB, RDS, S3, Route-53, DynamoDB, Lambda and SNS etc.
+Employee profile of XYZ company - New employees can input their information and upload photos.
+Existing employees can get their information when they want.
+
+======================== Project Detail - 2 ====================================
+
+Successfully implemented a two-tier architecture for the HR system, utilizing multiple AWS services including EC2, VPC & components, LB, RDS, S3, Route 53, DynamoDB, Lambda, and SNS.
+Developed a user-friendly interface allowing new employees to input their personal information and upload profile photos securely.
+Implemented a data retrieval mechanism enabling existing employees to access their information whenever required.
+
+================================================================================
+
+
+========================== Technical Skills ================================
+
+- Implemented a scalable EC2-based architecture for a web application, ensuring high availability and fault tolerance (Load Balancer, Auto Scaling,AMI, Snapshot).
+- Configured VPC and security groups to enforce network isolation and control access to AWS resources ( Security group for instance level security, NACL for Subnet level security)
+- Utilized RDS for database management, implementing backup and recovery strategies (use of Amazon Aurora).
+- Developed serverless functions using Lambda for efficient data processing and automation.
+- Leveraged S3 for secure storage and seamless integration with other AWS services (Working with S3 classes and life cycle policy)
+- Implemented DNS management and routing using Route 53 for reliable web application hosting (specially deployed CDN - content Delivery Network)
+- Designed and optimised DynamoDB tables to handle high read and write throughput.
+- Utilized SNS for real-time notifications and event-driven communication.
+
+=============================================================================
