@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Price Calculator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://wallpapers.com/images/high/bus-pictures-tcw9a0iu0syn4x7t.webp');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: 600;
+            display: block;
+            margin-top: 15px;
+        }
+
+        select, input[type="number"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        .result {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🎟️ Ticket Price Calculator</h2>
+        <form method="POST">
+            <label for="category">Select Category:</label>
+            <select name="category" required>
+                <option value="adult">Adult - ₹150</option>
+                <option value="child">Child - ₹100</option>
+                <option value="senior">Senior - ₹120</option>
+            </select>
+
+            <label for="quantity">Enter Quantity:</label>
+            <input type="number" name="quantity" min="1" required>
+
+            <input type="submit" value="Calculate Price">
+        </form>
+
+        {% if total is not none %}
+            <div class="result">
+                <strong>Total Price: ₹{{ total }}</strong>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
